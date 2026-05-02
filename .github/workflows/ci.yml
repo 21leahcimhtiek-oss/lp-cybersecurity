@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate required files
+        run: |
+          test -f index.html
+          test -f product.json
+          test -f stripe.json
+          test -f bundles.json
+
+      - name: Validate JSON files
+        run: |
+          python -m json.tool product.json >/dev/null
+          python -m json.tool stripe.json >/dev/null
+          python -m json.tool bundles.json >/dev/null
+          python -m json.tool vercel.json >/dev/null
