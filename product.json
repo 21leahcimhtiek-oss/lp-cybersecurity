@@ -2,13 +2,20 @@
   "id": "cybersecurity",
   "name": "Cybersecurity",
   "tagline": "AI-powered security solution",
-  "description": "AI-powered cybersecurity application built for Aurora Market. Modern, responsive design with SaaS monetization.",
+  "description": "AI-powered cybersecurity application built for Aurora Rayes ecosystem. Modern, responsive design with SaaS monetization.",
   "category": "security",
-  "tags": ["ai", "security"],
+  "tags": [
+    "ai",
+    "security"
+  ],
   "url": "https://auroramarket.org/cybersecurity",
   "demo": "https://21leahcimhtiek-oss.github.io/cybersecurity",
   "repo": "https://github.com/21leahcimhtiek-oss/cybersecurity",
-  "stack": ["HTML", "CSS", "JavaScript"],
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
   "status": "mvp",
   "version": "1.0.0",
   "author": "Aurora Rayes LLC",
